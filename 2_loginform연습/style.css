@@ -1,0 +1,107 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #eee;
+}
+.login-open {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 auto;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+  display: none;
+  background: #fff;
+  width: 500px;
+  padding: 30px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container .title {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+.container form {
+  margin-top: -20px;
+}
+.container form .data {
+  width: 100%;
+  height: 20px;
+  margin: 40px 0;
+}
+.container form .data label {
+  font-size: 18px;
+}
+.container form .data input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid silver;
+  font-size: 15px;
+  padding: 7px;
+}
+.container form .data input:focus {
+  border-color: red;
+}
+
+/* ===== 회원가입, 비밀번호찾기 ===== */
+form .forgot-pwd a,
+form .signup a {
+  text-decoration: none;
+  color: #2195f2;
+}
+form .forgot-pwd a:hover,
+form .signup a:hover {
+  text-decoration: underline;
+}
+form .signup {
+  text-align: center;
+}
+
+/* ==== 로그인 버튼 ===== */
+form .login-btn {
+  margin: 30px 0;
+  width: 100%;
+  height: 45px;
+  position: relative;
+  overflow: hidden;
+}
+form .login-btn .inner {
+  width: 300%;
+  height: 100%;
+  position: absolute;
+  left: -100%;
+  background: #9f93b6;
+  z-index: -1;
+}
+form .login-btn button {
+  background: none;
+  border: none;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+/* ===== 로그인 닫기창 ===== */
+.login-close {
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  background: #fff;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
