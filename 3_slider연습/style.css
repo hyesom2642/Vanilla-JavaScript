@@ -1,0 +1,77 @@
+/* ===== Slide 유형1 ===== */
+.container {
+  width: 640px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.slide-container {
+  width: 640px;
+  height: 400px;
+  overflow: hidden;
+}
+.slide-images {
+  width: 640px;
+  height: 400px;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.slide-images img {
+  display: block;
+  width: 100%;
+}
+/* ===== Button ===== */
+button {
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  background: #bbdefb;
+  color: #fff;
+  cursor: pointer;
+}
+.prev-btn {
+  float: left;
+}
+.next-btn {
+  float: right;
+}
+button:hover {
+  background: #90caf9;
+}
+button:disabled {
+  background: lightgray;
+}
+
+/* ===== Slide 유형2 ===== */
+.container1 {
+  width: 640px;
+  height: 500px;
+  margin: 0 auto;
+}
+.container1 h1 {
+  margin-top: 100px;
+}
+.slide-container1 {
+  position: relative;
+}
+.slide-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+.slide-show {
+  opacity: 1;
+  z-index: 1;
+}
