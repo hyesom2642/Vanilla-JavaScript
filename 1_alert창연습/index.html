@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 1_alert창 연습 </title>
+    <link rel="stylesheet" href="./indexStyle.css" />
+</head>
+<body>
+    
+    <div class="alert-container">
+        <div id="alert1" class="alert-box pink">
+            <p>Alert Box1</p>
+            <button onclick="alertOpenClose(1, 'none'), buttonOpen(1, 'block')">X</button>
+        </div>
+        <button id="alert-btn1" class="alert-button" onclick="alertOpenClose(1, 'block'), buttonOpen(1, 'none')">Alert Box1</button>
+
+        <div id="alert2" class="alert-box purple">
+            <p>Alert Box2</p>
+            <button onclick="alertOpenClose(2, 'none'), buttonOpen(2, 'block')">X</button>
+        </div>
+        <button id="alert-btn2" class="alert-button" onclick="alertOpenClose(2, 'block'), buttonOpen(2, 'none')">Alert Box2</button>
+
+        <div id="alert3" class="alert-box blue">
+            <p>Alert Box3</p>
+            <button onclick="alertOpenClose(3, 'none'), buttonOpen(3, 'block')">X</button>
+        </div>
+        <button id="alert-btn3" class="alert-button" onclick="alertOpenClose(3, 'block'), buttonOpen(3, 'none')">Alert Box3</button>
+        
+        <div id="alert4" class="alert-box green">
+            <p>Alert Box4</p>
+            <button onclick="alertOpenClose(4, 'none'), buttonOpen(4, 'block')">X</button>
+        </div>
+        <button id="alert-btn4" class="alert-button" onclick="alertOpenClose(4, 'block'), buttonOpen(4, 'none')">Alert Box4</button>
+            
+        <div id="alert5" class="alert-box orange">
+            <p>Alert Box5</p>
+            <button onclick="alertOpenClose(5, 'none'), buttonOpen(5, 'block')">X</button>
+        </div>
+        <button id="alert-btn5" class="alert-button" onclick="alertOpenClose(5, 'block'), buttonOpen(5, 'none')">Alert Box5</button>
+        
+        
+        <div id="alert" class="alert-box brown">
+            <p>Alert Box</p>
+            <button id="alert-buttons">X</button>
+        </div>
+        <button id="alert-btn" class="alert-button">Alert Box Open</button>
+    </div>
+
+    <script>
+        // function alertOpen(){
+        //     document.getElementById('alert').style.display = 'block';
+        // }
+        function alertOpenClose(n, state){
+            document.getElementById('alert'+n).style.display = state;
+        }
+        function buttonOpen(n,state){
+            document.getElementById('alert-btn'+n).style.display = state;
+        }
+
+        document.getElementById('alert-buttons').addEventListener('click', function(){
+            document.getElementById('alert').style.display = 'none';
+            document.getElementById('alert-btn').style.display = 'block';
+        });
+        document.getElementById('alert-btn').addEventListener('click', function(){
+            document.getElementById('alert').style.display = 'block';
+            document.getElementById('alert-btn').style.display = 'none';
+        });
+    </script>
+</body>
+</html>

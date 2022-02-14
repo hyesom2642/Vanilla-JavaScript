@@ -1,0 +1,61 @@
+.alert-container {
+  width: 500px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+}
+.alert-box {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.pink {
+  background: #ffcdd2;
+}
+.purple {
+  background: #d1c4e9;
+}
+.blue {
+  background: #bbdefb;
+}
+.green {
+  background: #b2dfdb;
+}
+.orange {
+  background: #ffccbc;
+}
+.brown {
+  background: #bcaaa4;
+}
+.alert-box p {
+  display: inline-block;
+}
+.alert-box button {
+  border: none;
+  background: inherit;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}
+.alert-button {
+  background: #eee;
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  display: none;
+  cursor: pointer;
+}
