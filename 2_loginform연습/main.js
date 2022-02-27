@@ -18,6 +18,13 @@ login_close.addEventListener('click', function(){
 submit_login.addEventListener('click', function(e){
     if ( id.value === "" ){
         e.preventDefault();
-        alert('아이디 및 비밀번호를 확인하세요');
-    }    
+        alert('아이디를 확인하세요');
+    }
+    if ( pw.value === "") {
+        e.preventDefault();
+        alert('비밀번호를 확인하세요');
+    } else if ( id.value.length < 6) {
+        e.preventDefault();
+        alert('비밀번호가 6글자 미만입니다');
+    }
 });
