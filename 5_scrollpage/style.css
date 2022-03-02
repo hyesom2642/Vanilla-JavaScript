@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.container {
+  width: 1300px;
+  height: 100%;
+  margin: 0 auto;
+}
+#header {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 5;
+}
+#nav {
+  width: 100%;
+  padding: 30px;
+  background: #fff59d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#nav .nav-logo {
+  font-size: 50px;
+  font-weight: bold;
+  color: #fff;
+  transition: all 1s;
+}
+#nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav ul li {
+  margin-left: 30px;
+}
+#nav ul li a {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+#nav ul li a:hover {
+  color: #ffd54f;
+}
+
+#main {
+  height: 100vh;
+  padding: 130px 0;
+}
+#main img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* 이용약관 예시 */
+.black-bg {
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  padding: 40px 0;
+}
+.white-bg {
+  background: #fff;
+  padding: 50px 30px;
+  width: 80%;
+  height: 600px;
+  margin: 0 auto;
+  text-align: center;
+  overflow-y: scroll;
+}
+.white-bg p {
+  text-align: center;
+}
+.white-bg img {
+  display: block;
+  width: 100%;
+}
+.white-bg .close {
+  display: block;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
+  padding: 20px;
+  border: none;
+  background: #fff;
+  cursor: pointer;
+}
