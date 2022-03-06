@@ -1,3 +1,15 @@
 .notshow {
   display: none;
 }
+.card {
+  width: 400px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.btn-container button {
+  margin-right: 10px;
+}
